@@ -9,24 +9,28 @@
   }
 }
 
+body {
+  overflow: hidden;
+}
+
 main {
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #222222;
 
 }
 
 div.albums {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 80%;
-  height: 80%;
-  overflow: scroll;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
 }
 
 
@@ -34,10 +38,13 @@ div.albums {
 .record {
   width: 200px;
   height: 200px;
-  // background-color: red;
-  border: 1px solid #111;
   margin: 10px;
-  transition: all 0.5s ease;
+  top:40%;
+  left:40%;
+  position: absolute;
+  -ms-user-select: none;
+  user-select: none;
+
 }
 
 div.record img {
@@ -45,4 +52,14 @@ div.record img {
   height: 100%;
   object-fit: contain;
   animation: fadein 1s 0.5s both;
+  pointer-events: none;
+}
+
+.test {
+  position:absolute;
+  left: 10%;
+  top: 40%;
+  width: 300px;
+  height:300px;
+  background-color: red;
 }
