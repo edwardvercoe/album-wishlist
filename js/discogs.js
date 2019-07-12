@@ -20,7 +20,6 @@ const discogsData = function () {
   })
 }
 
-console.log(discogsData())
 
 
 
@@ -46,7 +45,24 @@ const addResults = function (results) {
     scale: 1.2,
     transition: false
 	});
+
+// const recordList = document.querySelectorAll(".record")
+// console.log(recordList)
+//
+//     recordList.forEach(image => {
+//       const x = Math.floor(Math.random() * Math.floor(80))
+//       const y = Math.floor(Math.random() * Math.floor(60))
+//
+//       image.style.left = `${x}%`
+//       image.style.top = `${y}%`
+//
+//
+//
+//     })
+
+
   })
+
 
 }
 
@@ -56,26 +72,26 @@ const displayRecords = function() {
     .then(results => {
     	addResults(results)
 
-      document.addEventListener("mouseover", function(event) {
-        if (event.target && event.target.classList.contains("welcome")) {
-      // selects all images and puts in an array
-          const images = slideArea.querySelectorAll(".record")
-
-      // when mouseover put images in a random place
-
-          images.forEach(image => {
-            const x = Math.floor(Math.random() * Math.floor(80))
-            const y = Math.floor(Math.random() * Math.floor(60))
-
-            image.style.left = `${x}%`
-            image.style.top = `${y}%`
-
-
-
-          })
-          event.target.classList.remove("welcome")
-        }
-      })
+      // document.addEventListener("mouseover", function(event) {
+      //   if (event.target && event.target.classList.contains("welcome")) {
+      // // selects all images and puts in an array
+      //     const images = slideArea.querySelectorAll(".record")
+      //
+      // // when mouseover put images in a random place
+      //
+      //     images.forEach(image => {
+      //       const x = Math.floor(Math.random() * Math.floor(80))
+      //       const y = Math.floor(Math.random() * Math.floor(60))
+      //
+      //       image.style.left = `${x}%`
+      //       image.style.top = `${y}%`
+      //
+      //
+      //
+      //     })
+      //     event.target.classList.remove("welcome")
+      //   }
+      // })
 
           let zCount = 1
       document.addEventListener("mousedown", function(event) {

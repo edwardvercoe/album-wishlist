@@ -1,9 +1,9 @@
 
 // pick all images and layer them based on the z-index
-
-const slideArea = document.querySelector(".albums")
-
-
+// 
+// const slideArea = document.querySelector(".albums")
+//
+//
 
 
 

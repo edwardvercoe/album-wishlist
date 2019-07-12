@@ -11,25 +11,35 @@
 
 body {
   overflow: hidden;
+
+}
+
+.bg {
+  position: absolute;
+  left: -10px;
+  width: 105vw;
+  height: 105vh;
+  background-image:url(../img/chrome-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: blur(3px);
 }
 
 main {
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: 90vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #222222;
-
+  position: relative;
+  left: 0;
 }
 
 div.albums {
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  width: 100vw;
+  justify-content: space-between;
   height: 100vh;
 }
 
@@ -39,9 +49,7 @@ div.albums {
   width: 200px;
   height: 200px;
   margin: 10px;
-  top:40%;
-  left:40%;
-  position: absolute;
+  position: relative;
   -ms-user-select: none;
   user-select: none;
 

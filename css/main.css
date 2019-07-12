@@ -13,19 +13,26 @@
 body {
   overflow: hidden; }
 
+.bg {
+  position: absolute;
+  left: -10px;
+  width: 105vw;
+  height: 105vh;
+  background-image: url(../img/chrome-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-filter: blur(3px);
+  filter: blur(3px); }
+
 main {
-  width: 100vw;
-  height: 100vh;
+  width: 90vw;
+  height: 90vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #222222; }
+  position: relative;
+  left: 0; }
 
 div.albums {
   display: -webkit-box;
@@ -37,22 +44,16 @@ div.albums {
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  width: 100vw;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   height: 100vh; }
 
 .record {
   width: 200px;
   height: 200px;
   margin: 10px;
-  top: 40%;
-  left: 40%;
-  position: absolute;
+  position: relative;
   -ms-user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
